@@ -1,0 +1,33 @@
+students = ["A Kişisi", "B Kişisi", "C Kişisi", "D Kişisi"]
+#listeye öğrenci ekleme
+students.append("E Kişisi")
+print(students)
+
+
+#listeden öğrenci silme
+students.remove("A Kişisi")
+print(students)
+
+
+#listeye başka liste ekleme
+students.extend(["F Kişisi","G Kişisi","H Kişisi","J Kişisi"])
+print(students)
+
+
+#listenin tüm elemanlarını tek tek yazdırma 
+for i in students:
+     print(i)
+   
+
+#ad-soyad bilgisi girilen kişinin index numarasını bulma
+student=input("Numarasını öğrenmek istediğiniz kişinin ad-soyad bilgisini giriniz: ")
+print(students.index(student))
+
+
+#listeden istenilen kadar eleman silme
+i=0
+x=int(input("Kaç tane öğrenci silmek istiyorsunuz?: "))
+while i<x:
+     students.pop()
+     i +=1
+print(students)
